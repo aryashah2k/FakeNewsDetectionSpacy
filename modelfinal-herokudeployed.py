@@ -179,7 +179,7 @@ strwelcome="WELCOME! "#+str(x)
 
 st.sidebar.title(strwelcome)
 st.sidebar.image: st.sidebar.image("side.png", use_column_width=True)
-add_selectbox = st.sidebar.radio("Go to", ("Home","COVID-19", "Afghanistan","My History","About Us"))  
+add_selectbox = st.sidebar.radio("Go to", ("Home","COVID-19", "Afghanistan","About Us"))  
 
 
 
