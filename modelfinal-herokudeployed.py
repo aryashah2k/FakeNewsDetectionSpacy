@@ -175,7 +175,7 @@ nlp1=get_nlp_model('modeltaliban')
 # x=str(x[0])
 
 st.set_option('deprecation.showfileUploaderEncoding', False)   
-strwelcome="WELCOME, "+str(x)  
+strwelcome="WELCOME! "#+str(x)  
 
 st.sidebar.title(strwelcome)
 st.sidebar.image: st.sidebar.image("side.png", use_column_width=True)
