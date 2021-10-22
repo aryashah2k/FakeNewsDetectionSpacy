@@ -1,0 +1,9 @@
+{
+  "cnn_maxout_pieces":2,
+  "deprecation_fixes":{
+    "vectors_name":"en_core_web_md.vectors"
+  },
+  "pretrained_vectors":"en_core_web_md.vectors",
+  "token_vector_width":96,
+  "conv_depth":4
+}
