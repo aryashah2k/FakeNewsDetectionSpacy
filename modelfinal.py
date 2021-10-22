@@ -170,7 +170,7 @@ mydb = mysql.connector.connect(host = "remotemysql.com",
 mycursor = mydb.cursor()                      #getting the username 
 mycursor.execute("SELECT username FROM ywNaDEUMs0.current WHERE number='1'")
 y=mycursor.fetchall()  
-#x=y[0]
+x=y[0]
 x=list(x)
 x=str(x[0])
 
