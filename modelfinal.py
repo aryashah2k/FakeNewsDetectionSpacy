@@ -59,12 +59,12 @@ def generate_output(text):
                      unsafe_allow_html=True)
     
      mycursor = mydb.cursor()                      #getting the username 
-     mycursor.execute("SELECT username FROM mydatabase.current WHERE number='1'")
+     mycursor.execute("SELECT username FROM ywNaDEUMs0.current WHERE number='1'")
      y=mycursor.fetchall()  
      x=y[0]
      x=list(x)
      x=str(x[0])
-     sql = "INSERT INTO mydatabase.users (text,class,username) VALUES (%s,%s,%s)"  #storing
+     sql = "INSERT INTO ywNaDEUMs0.users (text,class,username) VALUES (%s,%s,%s)"  #storing
      val = (text,c,x)
      mycursor.execute(sql, val)
      mydb.commit()
@@ -84,13 +84,13 @@ def generate_output1(text):
                      unsafe_allow_html=True)
 
      import mysql.connector  ##history
-     mydb = mysql.connector.connect(host = "localhost",
-            user = "root",
-            password = "" , 
-            database = "mydatabase"      
+     mydb = mysql.connector.connect(host = "remotemysql.com",
+            user = "ywNaDEUMs0",
+            password = "z3FwsBlKs8" , 
+            database = "ywNaDEUMs0"      
         )
      mycursor = mydb.cursor()
-     sql = "INSERT INTO mydatabase.users (text,class,username) VALUES (%s,%s,%s)"  #storing
+     sql = "INSERT INTO ywNaDEUMs0.users (text,class,username) VALUES (%s,%s,%s)"  #storing
      val = (text,c,x)
      mycursor.execute(sql, val)
      mydb.commit()
@@ -124,7 +124,7 @@ def view_senti(text):
 
 def view(x):
     mycursor = mydb.cursor() 
-    sql = "SELECT text,class from mydatabase.users WHERE username IN(SELECT username FROM mydatabase.users INTERSECT SELECT username FROM mydatabase.current)"
+    sql = "SELECT text,class from ywNaDEUMs0.users WHERE username IN(SELECT username FROM ywNaDEUMs0.users INTERSECT SELECT username FROM ywNaDEUMs0.current)"
     mycursor.execute(sql)
     df=pd.DataFrame()
     myresult = mycursor.fetchall()
@@ -162,13 +162,13 @@ nlp = get_nlp_model('model')
 nlp1=get_nlp_model('modeltaliban')
 
 import mysql.connector  ##history
-mydb = mysql.connector.connect(host = "localhost",
-            user = "root",
-            password = "" , 
-            database = "mydatabase"      
+mydb = mysql.connector.connect(host = "remotemysql.com",
+            user = "ywNaDEUMs0",
+            password = "z3FwsBlKs8" , 
+            database = "ywNaDEUMs0"      
         )
 mycursor = mydb.cursor()                      #getting the username 
-mycursor.execute("SELECT username FROM mydatabase.current WHERE number='1'")
+mycursor.execute("SELECT username FROM ywNaDEUMs0.current WHERE number='1'")
 y=mycursor.fetchall()  
 x=y[0]
 x=list(x)
@@ -185,7 +185,7 @@ add_selectbox = st.sidebar.radio("Go to", ("Home","COVID-19", "Afghanistan","My 
 
 if st.sidebar.button("Log out"):
     mycursor = mydb.cursor()                      #deleting in current 
-    mycursor.execute("DELETE FROM mydatabase.current WHERE number='1'")
+    mycursor.execute("DELETE FROM ywNaDEUMs0.current WHERE number='1'")
     mydb.commit()
     url = 'http://localhost/MINI/login.html'        #Paste the URL for login.html
     webbrowser.open_new_tab(url)
