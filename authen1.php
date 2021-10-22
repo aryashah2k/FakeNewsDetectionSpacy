@@ -14,14 +14,14 @@
         if(isset($_POST['log'])){
         if(!empty($_POST['Uname']) && !empty($_POST['Pass'])) 
     {
-        $sql = "select *from mydatabase.customer where username = '$username' and password1 = '$password'";  
+        $sql = "select *from ywNaDEUMs0.customer where username = '$username' and password1 = '$password'";  
         $result = mysqli_query($con, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
         $count = mysqli_num_rows($result);  
           
         if($count >= 1){ 
             header("location: http://localhost:8501"); 
-            $query="INSERT INTO mydatabase.current VALUES('$username','$r')";  
+            $query="INSERT INTO ywNaDEUMs0.current VALUES('$username','$r')";  
             $result=mysqli_query($con,$query); 
             echo "<h1><center> Login successful </center></h1>"; 
 
