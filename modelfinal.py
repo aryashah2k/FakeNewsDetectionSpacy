@@ -14,10 +14,10 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 sid = SentimentIntensityAnalyzer()
 
 
-mydb = mysql.connector.connect(host = "localhost",  #connect to database
-            user = "root",
-            password = "" , 
-            database = "mydatabase"      
+mydb = mysql.connector.connect(host = "remotemysql.com",  #connect to database
+            user = "ywNaDEUMs0",
+            password = "z3FwsBlKs8" , 
+            database = "ywNaDEUMs0"      
         )
 main_bg = "bg3.png"
 main_bg_ext = "png"
@@ -187,7 +187,7 @@ if st.sidebar.button("Log out"):
     mycursor = mydb.cursor()                      #deleting in current 
     mycursor.execute("DELETE FROM ywNaDEUMs0.current WHERE number='1'")
     mydb.commit()
-    url = 'http://localhost/MINI/login.html'        #Paste the URL for login.html
+    url = 'https://github.com/aryashah2k/FakeNewsDetectionSpacy/blob/main/login.html'        #Paste the URL for login.html
     webbrowser.open_new_tab(url)
 
 
