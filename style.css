@@ -1,0 +1,93 @@
+body  
+{  
+    margin: 0;  
+    padding:0;  
+    background-color:#F8F8FF;  
+    font-family: 'Arial';  
+} 
+.header
+  {
+  text-align: center;
+  background: #000000;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top:0px;
+  height:80px;
+  padding: bottom 8px;
+  padding-top:7px;
+  }
+.login{  
+        margin-left:490px;
+        width: 210px;  
+        overflow: hidden;  
+        margin: 30 0 0 300px;  
+        padding: 80px; 
+        padding-bottom:30px;
+        padding-top:30px;
+        padding-left:30px;
+        background: #F8F8FF;
+        border-radius: 15px ; 
+        border-style: solid;
+        border-color:rgb(95, 155, 208);
+          
+}  
+h2{  
+    text-align: center;  
+    color: #000000;  
+    padding-top:10px;
+    color: beige;
+      
+}  
+label{  
+    color: #000000; 
+    text-align: center;
+    font-size: 17px;
+}
+#Uname{  
+    width: 210px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    padding-right: 8px;
+}  
+#Pass{  
+    width: 210px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+    padding-right: 8px; 
+      
+}  
+#log{  
+    width:220px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;
+    padding-right: 7px;  
+    color: black; 
+    background-color:rgb(95, 155, 208);  
+  
+  
+}  
+#reg{
+    width:220px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-right: 7px;  
+    padding-left: 7px;  
+    color: black;  
+    background-color:rgb(95, 155, 208) ;
+  
+}
+span{  
+    border-color:rgb(95, 155, 208)  ;
+    font-size:15px;  
+}  
+a{  
+    float: right;  
+    border-color:rgb(95, 155, 208) 
+}  
