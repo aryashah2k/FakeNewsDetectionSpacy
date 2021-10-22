@@ -221,10 +221,10 @@ elif add_selectbox == "Afghanistan":
     if st.button("View Sentiment"):
         view_senti(text)
 
-elif add_selectbox == "My History":
-    st.markdown("<h2 style='text-align: center; color: black;'>FAKE NEW DETECTION SYSTEM</h2>", unsafe_allow_html=True)
-    st.markdown("<h1 style='text-align: center; color: green;'>MY HISTORY</h1>", unsafe_allow_html=True)
-    view(x)
+# elif add_selectbox == "My History":
+#     st.markdown("<h2 style='text-align: center; color: black;'>FAKE NEW DETECTION SYSTEM</h2>", unsafe_allow_html=True)
+#     st.markdown("<h1 style='text-align: center; color: green;'>MY HISTORY</h1>", unsafe_allow_html=True)
+#     view(x)
 elif add_selectbox=="About Us":
     st.markdown("<h1 style='text-align: center; color: black;'><u>ABOUT US</u></h1>", unsafe_allow_html=True)
     st.subheader("  \n")
